@@ -6,25 +6,27 @@ html<!doctype html>
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    // GET -> Petició CSS
-    <link rel="stylesheet" href="mycss.css">
+    <!--// GET -> Petició CSS-->
+    <!--<link rel="stylesheet" href="mycss.css">-->
 </head>
 
 <body>
-    // GET -> Petició HTML
-    <a href="http://localhost:8000">link</a>
-    // GET -> Petició IMATGE
-    <img src="imatge.png" alt="">
-    // GET -> Petició JS
-    <script src="app.js"></script>
+<!--// GET -> Petició HTML &ndash;&gt;-->
+<!--<a href="http://localhost:8000">link</a>-->
+<!--// GET -> Petició IMATGE-->
+<!--<img src="imatge.png" alt="">-->
+<!--// GET -> Petició JS-->
+<!--<script src="app.js"></script>-->
 
-    // POST -> Formulari
-    <form action="procesarpost.php" method="POST">
-        Name: <input type="text" name="nom">
-        SN1: <input type="text" name="cognom1">
-        SN2: <input type="text" name="cognom2">
-        <input type="submit">
-    </form>
+<!--// POST -> Formulari-->
+<form action="procesarpost.php" method="POST"
+    enctype="multipart/form-data">
+    Name: <input type="text" name="nom">
+    <!--SN1: <input type="text" name="cognom1">-->
+    <!--SN2: <input type="text" name="cognom2">-->
+    Avatar: <input type="file" name="file" id="file">
+    <input type="submit">
+</form>
 
 </body>
 
